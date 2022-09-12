@@ -144,11 +144,11 @@
 
         MIRROR_LAYER {
             bindings = <
- &kp BSPC         &trans      &trans     &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-   &trans          &kp P       &kp O      &kp I   &kp U   &kp Y                  &trans  &trans  &trans  &trans  &trans  &trans
-   &trans  &kp SEMICOLON       &kp L      &kp K   &kp J   &kp H                  &trans  &trans  &trans  &trans  &trans  &trans
-   &trans   &kp QUESTION  &kp PERIOD  &kp COMMA   &kp M   &kp N  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                                         &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+ &trans         &trans      &trans     &trans  &trans         &trans                     &trans  &trans  &trans  &trans  &trans  &trans
+ &trans          &kp P       &kp O      &kp I   &kp U          &kp Y                     &trans  &trans  &trans  &trans  &trans  &trans
+ &trans  &kp SEMICOLON       &kp L      &kp K   &kp J          &kp H                     &trans  &trans  &trans  &trans  &trans  &trans
+ &trans   &kp QUESTION  &kp PERIOD  &kp COMMA   &kp M          &kp N     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                                       &trans  &trans  &kp BACKSPACE  &kp ENTER  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
