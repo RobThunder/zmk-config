@@ -108,7 +108,7 @@
 
         new_combo {
             bindings = <&mo 4>;
-            key-positions = <50 51>;
+            key-positions = <37 38>;
             layers = <0>;
         };
     };
