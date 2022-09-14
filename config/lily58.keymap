@@ -71,36 +71,6 @@
             tap-ms = <10>;
             wait-ms = <10>;
         };
-        prev_word_del: prev_word_del {
-            compatible = "zmk,behavior-macro";
-            label = "prev_word_del";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RCTRL>,
-                <&macro_tap>,
-                <&kp BACKSPACE>,
-                <&macro_release>,
-                <&kp RCTRL>;
-
-            tap-ms = <10>;
-            wait-ms = <10>;
-        };
-        next_word_del: next_word_del {
-            compatible = "zmk,behavior-macro";
-            label = "next_word_del";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RCTRL>,
-                <&macro_tap>,
-                <&kp DEL>,
-                <&macro_release>,
-                <&kp RCTRL>;
-
-            tap-ms = <10>;
-            wait-ms = <10>;
-        };
     };
 
     combos {
@@ -144,7 +114,7 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-     &trans  &trans  &trans  &trans   &kp SLASH  &kp KP_MULTIPLY                  &kp SCROLLLOCK  &prev_word_del  &kp PRINTSCREEN  &next_word_del    &trans  &trans
+     &trans  &trans  &trans  &trans   &kp SLASH  &kp KP_MULTIPLY                  &kp SCROLLLOCK          &trans  &kp PRINTSCREEN          &trans    &trans  &trans
      &trans  &trans  &kp N7  &kp N8      &kp N9        &kp MINUS                       &kp PG_UP      &prev_word           &kp UP      &next_word  &kp HOME  &trans
  &caps_word  &trans  &kp N4  &kp N5      &kp N6         &kp PLUS                       &kp PG_DN        &kp LEFT         &kp DOWN       &kp RIGHT   &kp END  &trans
      &trans  &trans  &kp N1  &kp N2      &kp N3        &kp EQUAL  &trans  &trans         &kp INS  &prev_word_sel           &trans  &next_word_sel    &trans  &trans
@@ -163,11 +133,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-  &trans   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
-  &trans   &kp F6   &kp F7   &kp F8   &kp F9  &kp F10                  &trans  &trans  &trans        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp GRAVE
- &kp F13  &kp F14  &kp F15  &kp F16  &kp F11  &kp F12                  &trans  &trans  &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp TILDE
- &kp F17  &kp F18  &kp F20  &kp F21   &trans   &trans  &trans  &trans  &trans  &trans  &trans                &trans          &kp BACKSLASH   &kp PIPE
-                             &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans
+ &trans   &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                  &trans  &trans  &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL
+ &trans   &kp F6   &kp F7   &kp F8   &kp F9  &kp F10                  &trans  &trans  &trans        &kp LEFT_BRACE        &kp RIGHT_BRACE  &kp GRAVE
+ &trans  &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &trans  &trans  &trans      &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp TILDE
+ &trans  &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &trans  &trans  &trans  &trans  &trans                &trans          &kp BACKSLASH   &kp PIPE
+                            &trans   &trans   &trans  &trans  &trans  &trans  &trans  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
