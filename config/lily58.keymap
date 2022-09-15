@@ -115,8 +115,8 @@
 
             bindings = <
      &trans  &trans  &trans       &trans   &kp SLASH  &kp KP_MULTIPLY                  &kp SCROLLLOCK          &trans  &kp PRINTSCREEN          &trans    &trans  &trans
-     &trans  &trans  &kp N7       &kp N8      &kp N9        &kp MINUS                       &kp PG_UP      &prev_word           &kp UP      &next_word  &kp HOME  &trans
- &caps_word  &trans  &kp N4       &kp N5      &kp N6         &kp PLUS                       &kp PG_DN        &kp LEFT         &kp DOWN       &kp RIGHT   &kp END  &trans
+ &caps_word  &trans  &kp N7       &kp N8      &kp N9        &kp MINUS                       &kp PG_UP      &prev_word           &kp UP      &next_word  &kp HOME  &trans
+     &trans  &trans  &kp N4       &kp N5      &kp N6         &kp PLUS                       &kp PG_DN        &kp LEFT         &kp DOWN       &kp RIGHT   &kp END  &trans
      &trans  &trans  &kp N1       &kp N2      &kp N3        &kp EQUAL  &trans  &trans         &kp INS  &prev_word_sel           &trans  &next_word_sel    &trans  &trans
                              &mt LALT N0  &kp PERIOD           &trans  &trans  &trans          &trans          &trans           &trans
             >;
