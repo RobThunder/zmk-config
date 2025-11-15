@@ -169,11 +169,11 @@
             //                     |      |      |      |        |  |       |      |       |       |
 
             bindings = <
-&kp GRAVE  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &trans     &trans    &trans    &trans  &trans  &trans
-&trans     &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &mkp RCLK  &kp LBKT  &kp RBKT  &trans  &trans  &kp EQUAL
-&trans     &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &mkp LCLK  &kp LBRC  &kp RBRC  &trans  &trans  &trans
-&trans     &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &trans  &trans  &trans     &kp LPAR  &kp RPAR  &trans  &trans  &trans
-                             &trans   &trans   &trans   &trans  &trans  &trans     &trans    &trans
+&kp GRAVE  &kp F1   &kp F2   &kp F3   &kp F4   &kp F5                   &trans          &trans          &trans          &trans          &trans  &trans
+&trans     &kp F6   &kp F7   &kp F8   &kp F9   &kp F10                  &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK       &trans  &trans
+&trans     &kp F11  &kp F12  &kp F13  &kp F14  &kp F15                  &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_DOWN  &trans  &trans
+&trans     &kp F16  &kp F17  &kp F18  &kp F19  &kp F20  &trans  &trans  &trans          &trans          &trans          &trans          &trans  &trans
+                             &trans   &trans   &trans   &trans  &trans  &trans          &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
